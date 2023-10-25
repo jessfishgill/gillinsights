@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gill Insights - Fisheries Consulting Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(120deg, #f4f4f4, #e0e0e0);
             color: #333;
         }
 
@@ -18,7 +19,13 @@
             margin: auto;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
 
         header {
@@ -28,11 +35,13 @@
 
         header h1 {
             margin: 0;
+            font-weight: 700;
         }
 
         header p {
             font-size: 1.2em;
             color: #666;
+            font-weight: 300;
         }
 
         .content {
@@ -43,16 +52,25 @@
         .btn {
             background-color: #3498db;
             color: #fff;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             text-decoration: none;
             font-size: 1em;
+            font-weight: 500;
             display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
         .btn:hover {
             background-color: #2980b9;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
         }
 
     </style>
@@ -65,7 +83,7 @@
         </header>
         <div class="content">
             <p>Welcome to Gill Insights. We provide fisheries consulting services to help you optimize and sustain your aquatic resources.</p>
-            <a href="contact.html" class="btn">Contact Us at jess@gillinsights.com</a>
+            <a href="mailto:jess@gillinsights.com" class="btn">Contact Us</a>
         </div>
     </div>
 </body>
